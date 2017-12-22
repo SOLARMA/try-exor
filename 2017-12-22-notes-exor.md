@@ -35,7 +35,8 @@ Image downloads:
 GitHub:
 
 * https://github.com/ExorEmbedded
-* https://github.com/ExorEmbedded/exor-bsp-platform
+  * https://github.com/ExorEmbedded/exor-bsp-platform
+  * linux-us03: v4.1.39 + RT-patch: https://github.com/ExorEmbedded/linux-us03/blob/4.1-2.0.x-imx-RT/Makefile
 
 CODESYS:
 
