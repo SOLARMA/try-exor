@@ -3,7 +3,7 @@
 Docs (from EXOR Int):
 
 * eX700 - The Revolutionary IIoT Controller: http://www.exorint.net/webpage?ReadForm&wPageName=products&c=eX700%20-%20The%20Revolutionary%20IIoT%20Controller&t=Products
-* EXOR eX800 Series Operating Instructions Ver 2.01 (PDF, 29 pages): http://www.exorint.net/docs/0/7EF05919C9150288C12581D7004EA440/$File/MANUGENEX7xx.pdf
+* EXOR eX700 Series Operating Instructions Ver 2.01 (PDF, 29 pages): http://www.exorint.net/docs/0/7EF05919C9150288C12581D7004EA440/$File/MANUGENEX7xx.pdf
 
 Modules (TBV: Compatible with eX700???):
 
