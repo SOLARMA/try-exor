@@ -49,7 +49,7 @@ TODO TODO TODO
 
 ### See also
 
-* [Notes for EXOR](TODO)
+* [Notes for EXOR](https://gist.github.com/gmacario/33461e84e0d6377796ba6780b36e9f7d)
 * <https://github.com/ExorEmbedded/exor-bsp-platform>
 * <https://github.com/graugans/fsl-community-bsp-platform>
 
