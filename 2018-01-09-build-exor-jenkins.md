@@ -12,10 +12,10 @@ Open Blue Ocean > New Pipeline
 
 Create Pipeline
 
-- Build log: <https://build.solarma.it/blue/organizations/jenkins/mv-embedded-linux-course/detail/lab01-stable/1/pipeline>
+- Pipeline log: <https://build.solarma.it/blue/organizations/jenkins/mv-embedded-linux-course/detail/lab01-stable/1/pipeline>
 - Jenkinsfile: <https://github.com/SOLARMA/mv-embedded-linux-course/blob/lab01-stable/Jenkinsfile>
 
-**FAIL**: Excerpt from build log
+**FAIL**: Excerpt from the build log
 
 ```
 [fsl] Running shell script
@@ -36,6 +36,14 @@ fatal: unable to access 'https://gerrit.googlesource.com/git-repo/': gnutls_hand
 
 script returned exit code 1
 ```
+
+(2018-01-09 16:28 CET)
+
+Click "Rerun" icon
+
+- Console: <https://build.solarma.it/job/mv-embedded-linux-course/job/lab01-stable/2/console>
+
+
 
 TODO TODO TODO
 
