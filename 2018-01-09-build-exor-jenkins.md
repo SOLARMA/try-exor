@@ -12,6 +12,8 @@ Open Blue Ocean > New Pipeline
 
 Create Pipeline
 
-Build log: TODO
+Build log: <https://build.solarma.it/blue/organizations/jenkins/mv-embedded-linux-course/detail/lab01-stable/1/pipeline>
+
+TODO
 
 <!-- EOF -->
