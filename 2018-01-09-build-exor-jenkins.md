@@ -12,7 +12,8 @@ Open Blue Ocean > New Pipeline
 
 Create Pipeline
 
-Build log: <https://build.solarma.it/blue/organizations/jenkins/mv-embedded-linux-course/detail/lab01-stable/1/pipeline>
+- Build log: <https://build.solarma.it/blue/organizations/jenkins/mv-embedded-linux-course/detail/lab01-stable/1/pipeline>
+- Jenkinsfile: <https://github.com/SOLARMA/mv-embedded-linux-course/blob/lab01-stable/Jenkinsfile>
 
 **FAIL**: Excerpt from build log
 
