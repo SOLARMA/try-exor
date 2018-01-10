@@ -12,11 +12,11 @@ Open Blue Ocean > New Pipeline
 
 Create Pipeline
 
+Job: <https://build.solarma.it/job/mv-embedded-linux-course/>
+
 ...
 
 (2018-01-10 09:12 CET)
-
-<https://build.solarma.it/job/mv-embedded-linux-course/>
 
 * Last Successful Artifacts for Branch [lab01-stable](https://build.solarma.it/job/mv-embedded-linux-course/job/lab01-stable/)
   - core-image-full-cmdline-udooneo-20180109153211.rootfs.manifest (8.04 KB)
