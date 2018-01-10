@@ -32,5 +32,6 @@ Job: <https://build.solarma.it/job/mv-embedded-linux-course/>
 * [Notes for EXOR](https://gist.github.com/gmacario/33461e84e0d6377796ba6780b36e9f7d)
 * <https://github.com/ExorEmbedded/exor-bsp-platform>
 * <https://github.com/graugans/fsl-community-bsp-platform>
+* <https://github.com/SOLARMA/mv-embedded-linux-course>
 
 <!-- EOF -->
