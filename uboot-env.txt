@@ -1,0 +1,89 @@
+bootcmd=setenv mmcdev 0; run findfdt; echo Try booting Linux from SD-card...;run mmcboot;if test $sk
+ipbsp1 = 0; then echo Try booting Linux from EMMC, main BSP...;setenv mmcdev 1; setenv bootpart 1:3;
+ setenv mmcroot /dev/mmcblk1p3 ro; run mmcboot;fi; echo Try booting Linux from USB stick...;run usbb
+oot;echo Try booting Linux from EMMC, recovery BSP...;setenv mmcdev 1; setenv bootpart 1:2; setenv m
+mcroot /dev/mmcblk1p2 ro; run mmcboot;
+bootdelay=1
+baudrate=115200
+ethprime=FEC
+loadaddr=0x12000000
+altbootcmd=i2c mw 68 19 0; setenv mmcdev 0; run findfdt; echo Try booting Linux from SD-card...;run 
+mmcboot;echo Try booting Linux from USB stick...;run usbboot;echo Try booting Linux from EMMC, recov
+ery BSP...;setenv mmcdev 1; setenv bootpart 1:2; setenv mmcroot /dev/mmcblk1p2 ro; run mmcboot;
+bootlimit=3
+silent=1
+loadaddr=0x12000000
+fdtaddr=0x18000000
+fdt_high=0xffffffff
+boot_fdt=yes
+smp=
+skipbsp1=0
+bootpart=0:1
+bootdir=/boot
+bootfile=zImage
+fdtfile=usom_undefined.dtb
+console=/dev/null
+rs232_txen=0
+optargs=
+mmcdev=0
+mmcroot=/dev/mmcblk0p2 rw
+mmcrootfstype=ext4 rootwait
+rootpath=/export/rootfs
+nfsopts=nolock
+mmcargs=setenv bootargs console=${console} ${optargs} hw_dispid=${hw_dispid} hw_code=${hw_code} boar
+d_name=${board_name} touch_type=${touch_type} ethaddr=${ethaddr} root=${mmcroot} ${smp} rootfstype=$
+{mmcrootfstype}
+netargs=setenv bootargs console=${console} ${optargs} hw_dispid=${hw_dispid} hw_code=${hw_code} boar
+d_name=${board_name} touch_type=${touch_type} ethaddr=${ethaddr} root=/dev/nfs nfsroot=${serverip}:$
+{rootpath},${nfsopts} rw ${smp} ip=dhcp
+bootenv=uEnv.txt
+loadbootenv=load mmc ${mmcdev} ${loadaddr} ${bootenv}
+importbootenv=echo Importing environment from mmc ...; env import -t $loadaddr $filesize
+loadimage=load mmc ${bootpart} ${loadaddr} ${bootdir}/${bootfile}
+loadfdt=load mmc ${bootpart} ${fdtaddr} ${bootdir}/${fdtfile}
+mmcloados=run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; the
+n bootz ${loadaddr} - ${fdtaddr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot
+ load the DT; fi; fi; else bootz; fi;
+mmcboot=mmc dev ${mmcdev}; if mmc rescan; then echo SD/MMC found on device ${mmcdev};if run loadboot
+env; then echo Loaded environment from ${bootenv};run importbootenv;fi;if test -n $uenvcmd; then ech
+o Running uenvcmd ...;run uenvcmd;fi;if run loadimage; then run mmcloados;fi;fi;
+usbargs=setenv bootargs console=${console} ${optargs} hw_dispid=${hw_dispid} hw_code=${hw_code} boar
+d_name=${board_name} touch_type=${touch_type} ethaddr=${ethaddr} root=${usbroot} ${smp} rootfstype=$
+{usbrootfstype}
+usbroot=/dev/sda2 rw
+usbrootfstype=ext4 rootwait
+usbloados=run usbargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run usbloadfdt; 
+then bootz ${loadaddr} - ${fdtaddr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Can
+not load the DT; fi; fi; else bootz; fi;
+usbloadimage=load usb 0 ${loadaddr} ${bootdir}/${bootfile}
+usbloadfdt=load usb 0 ${fdtaddr} ${bootdir}/${fdtfile}
+usbboot=mmc dev ${mmcdev}; if usb reset; then if run usbloadimage; then run usbloados;fi;usb stop;fi
+;
+netboot=echo Booting from network ...; setenv autoload no; dhcp; tftp ${loadaddr} ${bootfile}; tftp 
+${fdtaddr} ${fdtfile}; run netargs; bootz ${loadaddr} - ${fdtaddr}
+findfdt=if test $board_name = usom_etop7xx; then setenv fdtfile usom_etop7xx.dtb; fi; if test $board
+_name = usom_evkitq; then setenv fdtfile usom_evkitq.dtb; fi; if test $board_name = usom_etop7xxq; t
+hen setenv fdtfile usom_etop7xxq.dtb; fi; if test $board_name = usom_be15a; then setenv fdtfile usom
+_be15a.dtb; fi; if test $board_name = usom_wu16; then setenv fdtfile usom_wu16.dtb; fi; if test $boa
+rd_name = usom_jsmart; then setenv fdtfile usom_jsmart.dtb; fi; if test $board_name = usom_jsmartq; 
+then setenv fdtfile usom_jsmartq.dtb; fi; if test $board_name = usom_jsmartttl; then setenv fdtfile 
+usom_jsmartttl.dtb; fi; if test $board_name = usom_undefined; then setenv fdtfile usom_undefined.dtb
+; fi; 
+
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+\
+
+

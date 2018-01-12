@@ -1,0 +1,655 @@
+Fri Jan 12 10:08:10 UTC 2018
+eX715
+Linux version 3.14.28-rt25-1.0.0_ga-gfab7ac7 (autosvn@build-station-linux) (gcc version 4.9.3 (GCC) ) #1 SMP PREEMPT RT Tue Mar 28 15:17:24 CEST 2017
+console=/dev/null pcie_tse1addr=00:30:d8:04:2c:08 pcie_tse2addr=00:30:d8:04:2c:09 hw_dispid=56 hw_code=118 board_name=usom_etop7xxq touch_type=5 ethaddr=00:30:d8:04:2c:07 root=/dev/mmcblk1p3 ro rootfstype=ext4 rootwait
+processor	: 0
+model name	: ARMv7 Processor rev 10 (v7l)
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc09
+CPU revision	: 10
+
+processor	: 1
+model name	: ARMv7 Processor rev 10 (v7l)
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc09
+CPU revision	: 10
+
+processor	: 2
+model name	: ARMv7 Processor rev 10 (v7l)
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc09
+CPU revision	: 10
+
+processor	: 3
+model name	: ARMv7 Processor rev 10 (v7l)
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc09
+CPU revision	: 10
+
+Hardware	: Freescale i.MX6 Quad/DualLite (Device Tree)
+Revision	: 0000
+Serial		: 0000000000000000
+MemTotal:        2063032 kB
+MemFree:         1686792 kB
+MemAvailable:    1751120 kB
+Buffers:            4808 kB
+Cached:           150828 kB
+SwapCached:            0 kB
+Active:            49260 kB
+Inactive:          72880 kB
+Active(anon):      38144 kB
+Inactive(anon):     8468 kB
+Active(file):      11116 kB
+Inactive(file):    64412 kB
+Unevictable:       86092 kB
+Mlocked:           86116 kB
+HighTotal:        270336 kB
+HighFree:         238072 kB
+LowTotal:        1792696 kB
+LowFree:         1448720 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                32 kB
+Writeback:             0 kB
+AnonPages:         52388 kB
+Mapped:           103168 kB
+Shmem:              8676 kB
+Slab:              16604 kB
+SReclaimable:       6204 kB
+SUnreclaim:        10400 kB
+KernelStack:        1672 kB
+PageTables:         1784 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1031516 kB
+Committed_AS:     366924 kB
+VmallocTotal:     245760 kB
+VmallocUsed:       10000 kB
+VmallocChunk:     167924 kB
+1442.83 5709.49
+/usr/bin/id
+uid=0(root) gid=0(root) groups=0(root)
+/usr/bin/w
+ 10:08:10 up 24 min,  1 user,  load average: 0.00, 0.01, 0.05
+USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT
+root     pts/0     09:59    2.00s  0.09s  0.02s /bin/sh ./sys-identify.sh
+/usr/bin/whoami
+root
+/usr/bin/who
+root            pts/0           00:00   Jan 12 09:59:15  192.168.0.1
+rootfs / rootfs rw 0 0
+/dev/root / ext4 ro,relatime,data=ordered 0 0
+devtmpfs /dev devtmpfs rw,relatime,size=867512k,nr_inodes=216878,mode=755 0 0
+proc /proc proc rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+tmpfs /mnt tmpfs rw,relatime,size=1024k 0 0
+/dev/mmcblk1p1 /mnt/factory ext4 ro,relatime,data=ordered 0 0
+/dev/mmcblk1p5 /etc ext3 rw,relatime,errors=continue,user_xattr,acl,barrier=1,data=ordered 0 0
+/tmpfs /mnt/.psplash tmpfs rw,relatime,size=40k 0 0
+/dev/mmcblk1p2 /mnt/configos ext4 ro,relatime,data=ordered 0 0
+/dev/mmcblk1p6 /mnt/data ext4 rw,relatime,quota,usrquota,grpquota,data=ordered 0 0
+/dev/mmcblk1p6 /home ext4 rw,relatime,quota,usrquota,grpquota,data=ordered 0 0
+tmpfs /run tmpfs rw,nosuid,nodev,size=1024k,mode=755 0 0
+tmpfs /var/volatile tmpfs rw,relatime,size=16384k 0 0
+tmpfs /var/lib tmpfs rw,relatime,size=16384k 0 0
+devpts /dev/pts devpts rw,relatime,gid=5,mode=620 0 0
+dev:    size   erasesize  name
+mtd0: 00a00000 00010000 "fpga1"
+mtd1: 00a00000 00010000 "fpga2"
+/sbin/fdisk
+
+Disk /dev/mtdblock0: 10 MB, 10485760 bytes, 20480 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mtdblock1: 10 MB, 10485760 bytes, 20480 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mmcblk1: 7801 MB, 7801405440 bytes, 15237120 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: dos
+Disk identifier: 0x00000000
+
+        Device Boot      Start         End      Blocks   Id  System
+/dev/mmcblk1p1           32130      160649       64260   83  Linux
+/dev/mmcblk1p2          160650      867509      353430   83  Linux
+/dev/mmcblk1p3          867510     1895669      514080   83  Linux
+/dev/mmcblk1p4         1895670    15229619     6666975    5  Extended
+/dev/mmcblk1p5         1895733     2024189       64228+  83  Linux
+/dev/mmcblk1p6         2024253     3759209      867478+  83  Linux
+/dev/mmcblk1p7         3759273     4369679      305203+  83  Linux
+/dev/mmcblk1p8         4369743     5397839      514048+  83  Linux
+/dev/mmcblk1p9         5397903     6008309      305203+  83  Linux
+/dev/mmcblk1p10        6008373    15229619     4610623+  83  Linux
+
+Disk /dev/mmcblk1rpmb: 0 MB, 131072 bytes, 256 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mmcblk1boot1: 16 MB, 16777216 bytes, 32768 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mmcblk1boot0: 16 MB, 16777216 bytes, 32768 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+/bin/mount
+/dev/mmcblk1p3 on / type ext4 (ro,relatime,data=ordered)
+devtmpfs on /dev type devtmpfs (rw,relatime,size=867512k,nr_inodes=216878,mode=755)
+proc on /proc type proc (rw,relatime)
+sysfs on /sys type sysfs (rw,relatime)
+tmpfs on /mnt type tmpfs (rw,relatime,size=1024k)
+/dev/mmcblk1p1 on /mnt/factory type ext4 (ro,relatime,data=ordered)
+/dev/mmcblk1p5 on /etc type ext3 (rw,relatime,errors=continue,user_xattr,acl,barrier=1,data=ordered)
+/tmpfs on /mnt/.psplash type tmpfs (rw,relatime,size=40k)
+/dev/mmcblk1p2 on /mnt/configos type ext4 (ro,relatime,data=ordered)
+/dev/mmcblk1p6 on /mnt/data type ext4 (rw,relatime,quota,usrquota,grpquota,data=ordered)
+/dev/mmcblk1p6 on /home type ext4 (rw,relatime,quota,usrquota,grpquota,data=ordered)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,size=1024k,mode=755)
+tmpfs on /var/volatile type tmpfs (rw,relatime,size=16384k)
+tmpfs on /var/lib type tmpfs (rw,relatime,size=16384k)
+devpts on /dev/pts type devpts (rw,relatime,gid=5,mode=620)
+/bin/df
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root               478.1M    293.4M    169.7M  63% /
+devtmpfs                847.2M      4.0K    847.2M   0% /dev
+tmpfs                     1.0M         0      1.0M   0% /mnt
+/dev/mmcblk1p1           57.8M    300.0K     55.6M   1% /mnt/factory
+/dev/mmcblk1p5           57.7M      2.1M     52.5M   4% /etc
+/tmpfs                   40.0K      4.0K     36.0K  10% /mnt/.psplash
+/dev/mmcblk1p2          323.7M    293.0M     20.4M  93% /mnt/configos
+/dev/mmcblk1p6          817.8M    124.0M    669.3M  16% /mnt/data
+/dev/mmcblk1p6          817.8M    124.0M    669.3M  16% /home
+tmpfs                     1.0M    260.0K    764.0K  25% /run
+tmpfs                    16.0M    204.0K     15.8M   1% /var/volatile
+tmpfs                    16.0M    204.0K     15.8M   1% /var/lib
+/bin/lsmod
+Module                  Size  Used by
+cfg80211              214606  0 
+-rw-r--r--    1 root     root          1058 Mar 28  2017 /etc/passwd
+root:x:0:0:root:/home/root:/bin/sh
+daemon:x:1:1:daemon:/usr/sbin:/bin/sh
+bin:x:2:2:bin:/bin:/bin/sh
+sys:x:3:3:sys:/dev:/bin/sh
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/bin/sh
+man:x:6:12:man:/var/cache/man:/bin/sh
+lp:x:7:7:lp:/var/spool/lpd:/bin/sh
+mail:x:8:8:mail:/var/mail:/bin/sh
+news:x:9:9:news:/var/spool/news:/bin/sh
+uucp:x:10:10:uucp:/var/spool/uucp:/bin/sh
+proxy:x:13:13:proxy:/bin:/bin/sh
+www-data:x:33:33:www-data:/var/www:/bin/sh
+backup:x:34:34:backup:/var/backups:/bin/sh
+list:x:38:38:Mailing List Manager:/var/list:/bin/sh
+irc:x:39:39:ircd:/var/run/ircd:/bin/sh
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/bin/sh
+nobody:x:65534:65534:nobody:/nonexistent:/bin/sh
+messagebus:x:999:998::/var/lib/dbus:/bin/false
+avahi:x:998:997::/var/run/avahi-daemon:/bin/false
+avahi-autoipd:x:997:996:Avahi autoip daemon:/var/run/avahi-autoipd:/bin/false
+sshd:x:996:995::/var/run/sshd:/bin/false
+www:x:995:993::/var/www/localhost:/bin/sh
+admin:x:10000:10000::/home/admin:/bin/sh
+user:x:20000:20000::/home/user:/bin/sh
+lrwxrwxrwx    1 root     root            19 May  9  2017 /etc/shadow -> /mnt/factory/shadow
+root:$6$lVZZcV0M$cgNDTCinqzKGopFrtyGvvVN482YdTXEjmxJXM6K336Uw2y6F7AhGTadfjSx9IdR.0PX.csr6zw8t7UJXIyywN/:17295:0:99999:7:::
+daemon:*:17200:0:99999:7:::
+bin:*:17200:0:99999:7:::
+sys:*:17200:0:99999:7:::
+sync:*:17200:0:99999:7:::
+games:*:17200:0:99999:7:::
+man:*:17200:0:99999:7:::
+lp:*:17200:0:99999:7:::
+mail:*:17200:0:99999:7:::
+news:*:17200:0:99999:7:::
+uucp:*:17200:0:99999:7:::
+proxy:*:17200:0:99999:7:::
+www-data:*:17200:0:99999:7:::
+backup:*:17200:0:99999:7:::
+list:*:17200:0:99999:7:::
+irc:*:17200:0:99999:7:::
+gnats:*:17200:0:99999:7:::
+nobody:*:17200:0:99999:7:::
+avahi:!:17200::::::
+avahi-autoipd:!:17200::::::
+www:!:17200::::::
+sshd:!:17200::::::
+messagebus:!:17200::::::
+admin:$1$rfrSHPq/$/Zm7UP.8cLKqEwRY0kI3c1:17200:0:99999:7:::
+user:$1$wo1/p2fw$FXLqWuAo96HT5.tp5tNZS0:17200:0:99999:7:::
+-rw-r--r--    1 root     root           694 Mar 28  2017 /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+input:x:19:
+dialout:x:20:user,admin
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:
+audio:x:29:
+dip:x:30:
+www-data:x:33:www
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:www-data
+utmp:x:43:
+video:x:44:user,admin
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+shutdown:x:70:
+users:x:100:
+nogroup:x:65534:
+netdev:x:999:
+messagebus:x:998:
+avahi:x:997:
+avahi-autoipd:x:996:
+sshd:x:995:
+crontab:x:994:
+www:x:993:
+admin:x:10000:
+user:x:20000:
+data:x:20001:user,admin,www-data
+comm:x:20002:user,admin
+ExorintOS 0.0.1 \n \l
+
+/usr/bin/lsusb
+Bus 001 Device 002: ID 0424:2422 Standard Microsystems Corp. 
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 003: ID 04b4:6560 Cypress Semiconductor Corp. CY7C65640 USB-2.0 "TetraHub"
+Bus 001 Device 004: ID 0eef:c000 D-WAV Scientific Co., Ltd 
+/sbin/ifconfig
+eth0      Link encap:Ethernet  HWaddr 00:30:d8:04:2c:07  
+          inet addr:192.168.0.199  Bcast:192.168.0.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:4632 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:4247 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:447549 (437.0 KiB)  TX bytes:582439 (568.7 KiB)
+
+eth1      Link encap:Ethernet  HWaddr 00:30:d8:04:2c:08  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+eth2      Link encap:Ethernet  HWaddr 00:30:d8:04:2c:09  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:214 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:214 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:11488 (11.2 KiB)  TX bytes:11488 (11.2 KiB)
+
+/sbin/ip
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: can0: <NOARP,ECHO> mtu 16 qdisc noop state DOWN qlen 10
+    link/can 
+3: can1: <NOARP,ECHO> mtu 16 qdisc noop state DOWN qlen 10
+    link/can 
+4: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 00:30:d8:04:2c:07 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.199/24 brd 192.168.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+5: eth1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN qlen 1000
+    link/ether 00:30:d8:04:2c:08 brd ff:ff:ff:ff:ff:ff
+6: eth2: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN qlen 1000
+    link/ether 00:30:d8:04:2c:09 brd ff:ff:ff:ff:ff:ff
+default via 192.168.0.6 dev eth0  metric 90 
+192.168.0.0/24 dev eth0  metric 90 
+/sbin/ifconfig
+./sys-identify.sh: line 55: iwconfig: command not found
+  PID TTY      STAT   TIME COMMAND
+    2 ?        S      0:00 [kthreadd]
+    3 ?        S      0:00  \_ [ksoftirqd/0]
+    4 ?        S      0:00  \_ [kworker/0:0]
+    5 ?        S<     0:00  \_ [kworker/0:0H]
+    7 ?        S      0:00  \_ [posixcputmr/0]
+    8 ?        S      0:00  \_ [kclksetdelayd]
+    9 ?        S      0:00  \_ [rcub/0]
+   10 ?        S      0:00  \_ [rcu_preempt]
+   11 ?        S      0:00  \_ [rcu_sched]
+   12 ?        S      0:00  \_ [rcu_bh]
+   13 ?        S      0:00  \_ [rcuc/0]
+   14 ?        S      0:00  \_ [kcmosdelayd]
+   15 ?        S      0:00  \_ [migration/0]
+   16 ?        S      0:00  \_ [migration/1]
+   17 ?        S      0:00  \_ [rcuc/1]
+   18 ?        S      0:00  \_ [ksoftirqd/1]
+   19 ?        S      0:00  \_ [posixcputmr/1]
+   21 ?        S<     0:00  \_ [kworker/1:0H]
+   22 ?        S      0:00  \_ [migration/2]
+   23 ?        S      0:00  \_ [rcuc/2]
+   24 ?        S      0:00  \_ [ksoftirqd/2]
+   25 ?        S      0:00  \_ [posixcputmr/2]
+   26 ?        S      0:00  \_ [kworker/2:0]
+   27 ?        S<     0:00  \_ [kworker/2:0H]
+   28 ?        S      0:00  \_ [migration/3]
+   29 ?        S      0:00  \_ [rcuc/3]
+   30 ?        S      0:00  \_ [ksoftirqd/3]
+   31 ?        S      0:00  \_ [posixcputmr/3]
+   33 ?        S<     0:00  \_ [kworker/3:0H]
+   34 ?        S<     0:00  \_ [khelper]
+   35 ?        S      0:00  \_ [kdevtmpfs]
+   36 ?        S<     0:00  \_ [writeback]
+   37 ?        S<     0:00  \_ [bioset]
+   38 ?        S<     0:00  \_ [crypto]
+   39 ?        S<     0:00  \_ [kblockd]
+   40 ?        S<     0:00  \_ [ata_sff]
+   41 ?        S      0:00  \_ [khubd]
+   42 ?        S      0:00  \_ [irq/70-21a8000.]
+   60 ?        S      0:00  \_ [irq/38-2400000.]
+   61 ?        S      0:00  \_ [irq/37-2400000.]
+   62 ?        S      0:00  \_ [ipu1_task]
+   63 ?        S      0:00  \_ [ipu1_task]
+   64 ?        S      0:00  \_ [irq/40-2800000.]
+   65 ?        S      0:00  \_ [irq/39-2800000.]
+   66 ?        S      0:00  \_ [ipu2_task]
+   67 ?        S      0:00  \_ [ipu2_task]
+   69 ?        S<     0:00  \_ [rpciod]
+   70 ?        S      0:00  \_ [kswapd0]
+   71 ?        S      0:00  \_ [fsnotify_mark]
+   72 ?        S<     0:00  \_ [nfsiod]
+   73 ?        S<     0:00  \_ [cifsiod]
+  110 ?        S      0:00  \_ [irq/384-PCIe PM]
+  111 ?        S      0:00  \_ [irq/384-aerdrv]
+  112 ?        S      0:00  \_ [irq/34-sdma]
+  113 ?        S      0:00  \_ [kworker/1:1]
+  114 ?        S      0:00  \_ [irq/58-2020000.]
+  115 ?        S      0:00  \_ [irq/59-21e8000.]
+  116 ?        S      0:00  \_ [irq/60-21ec000.]
+  117 ?        S      0:00  \_ [irq/63-2008000.]
+  118 ?        S      0:00  \_ [spi0]
+  127 ?        S      0:00  \_ [irq/64-200c000.]
+  128 ?        S      0:00  \_ [spi1]
+  133 ?        S      0:00  \_ [irq/150-2188000]
+  134 ?        S      0:00  \_ [irq/151-2188000]
+  141 ?        S      0:00  \_ [irq/72-2184200.]
+  143 ?        S      0:00  \_ [irq/112-20bc000]
+  144 ?        S      0:00  \_ [cfinteractive]
+  145 ?        S      0:00  \_ [irq/164-2194000]
+  146 ?        S      0:00  \_ [irq/55-mmc0]
+  147 ?        S      0:00  \_ [irq/57-mmc1]
+  148 ?        S<     0:00  \_ [galcore workque]
+  149 ?        S      0:00  \_ [Vivante Kernel ]
+  150 ?        S      0:01  \_ [mmcqd/1]
+  151 ?        S      0:00  \_ [mmcqd/1boot0]
+  152 ?        S      0:00  \_ [mmcqd/1boot1]
+  153 ?        S      0:00  \_ [mmcqd/1rpmb]
+  154 ?        S      0:00  \_ [kworker/2:1]
+  155 ?        S      0:00  \_ [galcore daemon ]
+  156 ?        S      0:00  \_ [galcore daemon ]
+  157 ?        S      0:00  \_ [galcore daemon ]
+  160 ?        S      0:00  \_ [irq/43-galcore ]
+  161 ?        S      0:00  \_ [irq/50-vdoa]
+  162 ?        S      0:00  \_ [irq/44-VPU_CODE]
+  163 ?        S      0:00  \_ [irq/35-VPU_JPG_]
+  164 ?        S<     0:00  \_ [vpu_wq]
+  165 ?        S      0:00  \_ [irq/137-2101000]
+  166 ?        S      0:00  \_ [irq/138-2102000]
+  209 ?        S      0:00  \_ [irq/52-snvs-sec]
+  210 ?        S      0:00  \_ [irq/82-asrc]
+  211 ?        S<     0:00  \_ [deferwq]
+  212 ?        S      0:00  \_ [kworker/3:1]
+  213 ?        S      0:00  \_ [working_hours.2]
+  214 ?        S      0:00  \_ [irq/81-imx_ther]
+  216 ?        S<     0:00  \_ [kworker/0:1H]
+  217 ?        S      0:00  \_ [jbd2/mmcblk1p3-]
+  218 ?        S<     0:00  \_ [ext4-rsv-conver]
+  233 ?        S      0:00  \_ [jbd2/mmcblk1p1-]
+  234 ?        S<     0:00  \_ [ext4-rsv-conver]
+  238 ?        S<     0:00  \_ [kworker/1:1H]
+  239 ?        S      0:00  \_ [kjournald]
+  247 ?        S<     0:00  \_ [kworker/2:1H]
+  257 ?        S      0:00  \_ [jbd2/mmcblk1p2-]
+  258 ?        S<     0:00  \_ [ext4-rsv-conver]
+  260 ?        S      0:00  \_ [jbd2/mmcblk1p6-]
+  261 ?        S<     0:00  \_ [ext4-rsv-conver]
+  508 ?        S<     0:00  \_ [kworker/3:1H]
+ 1134 ?        S      0:00  \_ [irq/388-eth1]
+ 1139 ?        S      0:00  \_ [irq/392-eth2]
+ 1315 ?        S<     0:00  \_ [cfg80211]
+ 1413 ?        S      0:00  \_ [kworker/u8:2]
+ 1819 ?        S      0:00  \_ [kworker/3:2]
+ 1985 ?        S      0:00  \_ [kworker/u8:1]
+ 1987 ?        S      0:00  \_ [kworker/1:0]
+ 2009 ?        S      0:00  \_ [kworker/0:2]
+    1 ?        Ss     0:01 init [5]  
+  301 ?        Ss     0:00 /lib/udev/udevd -d
+  559 ?        S      0:00  \_ /lib/udev/udevd -d
+  560 ?        S      0:00  \_ /lib/udev/udevd -d
+ 1073 ?        Ss     0:00 /sbin/portmap
+ 1081 ?        Ss     0:00 /usr/sbin/rpcbind
+ 1110 ?        S      0:00 /sbin/syslogd -n -O /var/log/messages -s 4096 -b 2 -D
+ 1113 ?        S      0:00 /sbin/klogd -n
+ 1121 ?        Ss     0:00 /usr/bin/dbus-daemon --system
+ 1129 ?        S      0:00 /usr/sbin/ifplugd -i eth0 -fwI -u0 -d3
+ 1133 ?        S      0:00 /usr/sbin/ifplugd -i eth1 -fwI -u0 -d3
+ 1138 ?        S      0:00 /usr/sbin/ifplugd -i eth2 -fwI -u0 -d3
+ 1148 ?        Ss     0:00 /usr/sbin/sshd
+ 1970 ?        Ss     0:00  \_ sshd: root@pts/0 
+ 1974 pts/0    Ss     0:00      \_ -sh
+ 2236 pts/0    S+     0:00          \_ /bin/sh ./sys-identify.sh
+ 2278 pts/0    R+     0:00              \_ ps axfw
+ 1187 ?        Sl     0:03 /usr/bin/node --max_new_space_size=512 --gc_global --always_compact server.js
+ 1191 ?        S      0:00  \_ /bin/bash -c exec /usr/bin/node  --max_new_space_size=512 --gc_global --always_compact server.js > >(logger -t JMUConfig) 2>&1
+ 1192 ?        S      0:00      \_ logger -t JMUConfig
+ 1198 ?        Ss     0:00 nginx: master process /usr/sbin/nginx
+ 1199 ?        S      0:00  \_ nginx: worker process
+ 1202 ?        S      0:00 /bin/sh /etc/rc5.d/S80xserver-nodm start background
+ 1213 ?        S      0:00  \_ xinit /etc/X11/Xsession -- /usr/bin/Xorg -nolisten tcp -br -pn
+ 1216 tty3     S<s+   0:01      \_ /usr/bin/Xorg :0 -nolisten tcp -br -pn
+ 1219 ?        S      0:00      \_ /usr/bin/x-window-manager --no-force-fullscreen
+ 1231 ?        S      0:00          \_ xscreensaver -no-splash -no-capture-stderr
+ 1276 ?        Z      0:00          \_ [gsettings-data-] <defunct>
+ 1210 ?        Ss     0:00 /usr/sbin/crond
+ 1226 ?        S      0:00 /usr/bin/dbus-launch --auto-syntax --exit-with-session
+ 1227 ?        Ss     0:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+ 1237 ?        S      0:00 /bin/bash -c /usr/bin/EPAD > >(logger -t EPAD)  2>&1
+ 1240 ?        Sl     0:00  \_ /usr/bin/EPAD
+ 1241 ?        S      0:00      \_ /bin/bash -c /usr/bin/EPAD > >(logger -t EPAD)  2>&1
+ 1242 ?        S      0:00          \_ logger -t EPAD
+ 1250 ?        S      0:00 /bin/bash -c DISPLAY=:0 /usr/bin/jmlauncher --ui /usr/bin/jmlauncherUI --root /mnt/data/hmi --config /mnt/data/hmi/jmlauncher.xml > >(logger -t jmlauncher)  2>&1
+ 1251 ?        Sl     0:00  \_ /usr/bin/jmlauncher --ui /usr/bin/jmlauncherUI --root /mnt/data/hmi --config /mnt/data/hmi/jmlauncher.xml
+ 1252 ?        S      0:00      \_ /bin/bash -c DISPLAY=:0 /usr/bin/jmlauncher --ui /usr/bin/jmlauncherUI --root /mnt/data/hmi --config /mnt/data/hmi/jmlauncher.xml > >(logger -t jmlauncher)  2>&1
+ 1253 ?        S      0:00          \_ logger -t jmlauncher
+ 1277 ?        S      0:00 /bin/sh /mnt/data/hmi/qthmi/run.sh -kiosk
+ 1283 ?        S      0:00  \_ /bin/sh ./start.sh -kiosk
+ 1286 ?        S      0:00      \_ /bin/sh ./start.sh -kiosk
+ 1295 ?        S      0:00      |   \_ /bin/sh ./start.sh -kiosk
+ 1297 ?        SLl    1:21      |       \_ ./codesyscontrol
+ 1287 ?        Sl     0:02      \_ ./HMI -kiosk
+ 1292 ?        S      0:00 /bin/bash -c /usr/bin/vkeyboard > >(logger -t VKeyboard)  2>&1
+ 1294 ?        S      0:00  \_ /usr/bin/vkeyboard
+ 1296 ?        S      0:00      \_ /bin/bash -c /usr/bin/vkeyboard > >(logger -t VKeyboard)  2>&1
+ 1298 ?        S      0:00          \_ logger -t VKeyboard
+ 1333 ?        S      0:00 dbus-launch --exit-with-session --autolaunch 05d70325ff6914fce0c773b95a588372
+ 1335 ?        Ss     0:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+ 1473 ?        Ss     0:00 /usr/bin/x11vnc -rc /etc/x11vnc/x11vnc.conf -o /var/log/x11vnc.log
+ 1958 ?        S      0:00 avahi-daemon: running [eX715.local]
+ 1959 ?        S      0:00  \_ avahi-daemon: chroot helper
+/bin/netstat
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.1:8000          0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:5900            0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:8080          0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:21              0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:3000          0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:11740           0.0.0.0:*               LISTEN     
+tcp        0      0 192.168.0.199:22        192.168.0.1:42956       ESTABLISHED
+/usr/bin/nc
+OpenBSD netcat (Debian patchlevel 4)
+usage: nc [-46bCDdhjklnrStUuvZz] [-I length] [-i interval] [-O length]
+	  [-P proxy_username] [-p source_port] [-q seconds] [-s source]
+	  [-T toskeyword] [-V rtable] [-w timeout] [-X proxy_protocol]
+	  [-x proxy_address[:port]] [destination] [port]
+	Command Summary:
+		-4		Use IPv4
+		-6		Use IPv6
+		-b		Allow broadcast
+		-C		Send CRLF as line-ending
+		-D		Enable the debug socket option
+		-d		Detach from stdin
+		-h		This help text
+		-I length	TCP receive buffer length
+		-i secs		Delay interval for lines sent, ports scanned
+		-j		Use jumbo frame
+		-k		Keep inbound sockets open for multiple connects
+		-l		Listen mode, for inbound connects
+		-n		Suppress name/port resolutions
+		-O length	TCP send buffer length
+		-P proxyuser	Username for proxy authentication
+		-p port		Specify local port for remote connects
+        	-q secs		quit after EOF on stdin and delay of secs
+		-r		Randomize remote ports
+		-S		Enable the TCP MD5 signature option
+		-s addr		Local source address
+		-T toskeyword	Set IP Type of Service
+		-t		Answer TELNET negotiation
+		-U		Use UNIX domain socket
+		-u		UDP mode
+		-V rtable	Specify alternate routing table
+		-v		Verbose
+		-w secs		Timeout for connects and final net reads
+		-X proto	Proxy protocol: "4", "5" (SOCKS) or "connect"
+		-x addr[:port]	Specify proxy address and port
+		-Z		DCCP mode
+		-z		Zero-I/O mode [used for scanning]
+	Port numbers can be individual or ranges: lo-hi [inclusive]
+/usr/bin/curl
+curl 7.32.0 (arm-poky-linux-gnueabi) libcurl/7.32.0 GnuTLS/2.12.23 zlib/1.2.8
+Protocols: dict file ftp ftps gopher http https imap imaps pop3 pop3s rtsp smtp smtps telnet tftp 
+Features: NTLM NTLM_WB SSL libz TLS-SRP 
+/usr/bin/scp
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+/usr/bin/ssh
+OpenSSH_6.2p2, OpenSSL 1.0.1e 11 Feb 2013
+/usr/bin/wget
+wget: missing URL
+Usage: wget [OPTION]... [URL]...
+
+Try `wget --help' for more options.
+BASH=/bin/sh
+BASHOPTS=cmdhist:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_LINENO=([0]="0")
+BASH_SOURCE=([0]="./sys-identify.sh")
+BASH_VERSINFO=([0]="4" [1]="2" [2]="10" [3]="1" [4]="release" [5]="arm-poky-linux-gnueabi")
+BASH_VERSION='4.2.10(1)-release'
+DIRSTACK=()
+EDITOR=/bin/vi
+EUID=0
+GROUPS=()
+HOME=/home/root
+HOSTNAME=eX715
+HOSTTYPE=arm
+IFS=' 	
+'
+LOGNAME=root
+MACHTYPE=arm-poky-linux-gnueabi
+MAIL=/var/mail/root
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnueabi
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+PIPESTATUS=([0]="1")
+POSIXLY_CORRECT=y
+PPID=1974
+PS4='+ '
+PWD=/home/root
+SHELL=/bin/sh
+SHELLOPTS=braceexpand:hashall:interactive-comments:posix
+SHLVL=2
+SSH_CLIENT='192.168.0.1 42956 22'
+SSH_CONNECTION='192.168.0.1 42956 192.168.0.199 22'
+SSH_TTY=/dev/pts/0
+TERM=xterm-256color
+TSLIB_TSDEVICE=/dev/input/touchscreen0
+UID=0
+USER=root
+_=wget
+./sys-identify.sh: line 71: printenv: command not found
+/bin/sh
+GNU bash, version 4.2.10(1)-release (arm-poky-linux-gnueabi)
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+/bin/bash
+GNU bash, version 4.2.10(1)-release (arm-poky-linux-gnueabi)
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+/usr/bin/python
+Python 2.7.3
+ls: /Data: No such file or directory
