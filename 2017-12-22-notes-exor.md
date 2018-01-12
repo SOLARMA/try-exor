@@ -5,12 +5,14 @@
 Downloading images from 
 http://download.exorembedded.net:8080/Public/usom03
 
-* bootloader/us03-kit-uboot-v2.0.tar.gz (138.2 KB)
-* JMobile/jmobile2.01-233-2_portable_us03kit_cds3.tar.gz (84.5 MB)
-* kernel/us03-kit-kernel-v2.0.tar.gz (5.3 MB)
-* rootfs/core-image-exor-x11-us03-kit-v2.0.tar.gz (221.1 MB)
-* sdcard-images/SDcard-image-us03-kit-4gb-v2.0.zip (1.1 GB)
-* SDK/exor-us03kit-qt5-x11-sdk-v2.0.sh (897.6 MB)
+| Directory     | File                                           | Size     |
+|---------------|------------------------------------------------|----------|
+| bootloader    | us03-kit-uboot-v2.0.tar.gz                     | 138.2 KB |
+| JMobile       | jmobile2.01-233-2_portable_us03kit_cds3.tar.gz | 84.5 MB  |
+| kernel        | us03-kit-kernel-v2.0.tar.gz                    | 5.3 MB   |
+| rootfs        | core-image-exor-x11-us03-kit-v2.0.tar.gz       | 221.1 MB |
+| sdcard-images | SDcard-image-us03-kit-4gb-v2.0.zip             | 1.1 GB   |
+| SDK           | exor-us03kit-qt5-x11-sdk-v2.0.sh               | 897.6 MB |
 
 ----------------------
 
