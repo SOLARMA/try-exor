@@ -69,21 +69,3 @@ rd_name = usom_jsmart; then setenv fdtfile usom_jsmart.dtb; fi; if test $board_n
 then setenv fdtfile usom_jsmartq.dtb; fi; if test $board_name = usom_jsmartttl; then setenv fdtfile 
 usom_jsmartttl.dtb; fi; if test $board_name = usom_undefined; then setenv fdtfile usom_undefined.dtb
 ; fi; 
-
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-\
-
-
