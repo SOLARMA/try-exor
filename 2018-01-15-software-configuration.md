@@ -9,9 +9,13 @@ Checked on 2018-01-15, 18:00 CET
 * Qt libraries: libQt version 4.8.5 for: Core, DBus, Gui, Network, OpenGL, Test, Xml; libQtWebKit version 4.9.4
 * NodeJS v0.10.45
 
-## SW config of binaries on download.exorint.com
+## SW config of binaries on download.exorembedded.net
 
-Checked on 2018-01-15, 18:00 CET
+URL http://download.exorembedded.net:8080/Public/usom03 checked on 2018-01-15, 18:00 CET
+
+#### From `core-image-exor-x11-us03-kit-v2.0.tar.gz`
+
+TODO
 
 #### From `jmobile2.01-233-2_portable_us03kit_cds3.tar.gz`
 
