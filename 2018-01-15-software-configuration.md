@@ -24,6 +24,10 @@ Checked on 2018-01-15, 18:00 CET
 
 * Kernel: Bitbake recipe `linux-imx-rt-3.14.28-r0`
 * libc: TODO
+* X Server: recipe `recipe xserver-xorg-2_1.19.1-r0`
+* PulseAudio: recipe `pulseaudio-10.0-r0`
+* RPM: recipe `rpm-1_4.13.90+gitAUTOINC+a8e51b3bb0-r0`
+* Qt 5.9.2
 * TODO: x11vnc
 
 <!-- EOF -->
