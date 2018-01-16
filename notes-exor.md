@@ -41,6 +41,7 @@ http://download.exorembedded.net:8080/Public/usom03
 
 ## Documentation (from EXOR Embedded)
 
+* microSOM uS03: http://www.exorembedded.net/webpage?ReadForm&wPageName=products&t=Product&p=microSOM%20uS03
 * uS03 microSOM NXP iMX6 evaluation kit: http://www.exorembedded.net/webpage?ReadForm&wPageName=products&t=Product&p=uS03%20microSOM%20NXP%20iMX6%20evaluation%20kit
 * microSOM(TM) US03 Hardware Description: http://www.exorembedded.net/docs/0/2FD2C9F798A3FAEDC1257F7A00376284/$File/THW957-2.pdf (PDF, 53 pages)
 * Exor PLC+HMI Development Kit User Manual: http://www.exorembedded.net/docs/0/FF95F5F0137E436FC12580050032EA04/$File/Exor-EvaluationKit-UserManual-v1.6.pdf (PDF, 55 pages)
