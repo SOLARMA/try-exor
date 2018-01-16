@@ -54,7 +54,7 @@ http://download.exorembedded.net:8080/Public/usom03
 ## GitHub Repositories
 
 * https://github.com/ExorEmbedded
-  * https://github.com/ExorEmbedded/exor-bsp-platform
+  * EXOR Embedded BSP: https://github.com/ExorEmbedded/exor-bsp-platform
   * linux-us03: v4.1.39 + RT-patch: https://github.com/ExorEmbedded/linux-us03/blob/4.1-2.0.x-imx-RT/Makefile
 
 ## CODESYS
