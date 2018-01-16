@@ -37,7 +37,7 @@ http://download.exorembedded.net:8080/Public/usom03
 
 * PLIO03 Multifunction I/O - PLIO03-CDS - I/O Module with 20 DI 24VDC, 12 DO 24VDC 0,5 A, 8 AI (4 diff or 8 single or 4 PT100), 4 AO, 1 PT100 Cold Junct + CODESYS V2
 * PLIO04 Multifunction I/O - PLIO04 -I/O Module with 10 DI 24VDC, 10 DO SSR 1.4 A, 4 Programmable AI voltage/PT100/TC, 4 AI voltage, 1 PT100
-* http://www.exorint.net/webpage?ReadForm&wPageName=products&c=Integrated%20Solutions%20HMI+PLC&t=Products
+* Integrated Solutions HMI+PLC: http://www.exorint.net/webpage?ReadForm&wPageName=products&c=Integrated%20Solutions%20HMI+PLC&t=Products
 
 ## Documentation (from EXOR Embedded)
 
